@@ -26,7 +26,7 @@ public class Ball : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		//searches for object type square and assigns it to my paddle
+		//searches for object type square and assigns it to my square
 		mySquare = GameObject.FindObjectOfType<Squares>();
 
 		//saves the distance between the ball and the paddle

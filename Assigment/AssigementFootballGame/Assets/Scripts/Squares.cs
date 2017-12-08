@@ -16,11 +16,11 @@ public class Squares : MonoBehaviour {
 	void Update () {
 
 		if (Input.GetKey (KeyCode.W)) {
-			square.velocity = new Vector2 (0f, 5f);
+			square.velocity = new Vector2 (0f, 6f);
 			
 		} else if (Input.GetKey (KeyCode.S)) {
 
-			square.velocity = new Vector2 (0f, -5f);
+			square.velocity = new Vector2 (0f, -6f);
 		} else {
 			
 			square.velocity = new Vector2 (0f, 0f);
