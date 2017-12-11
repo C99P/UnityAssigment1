@@ -20,6 +20,29 @@ public class Score : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		Scoree.text = score + "            " + scoreTwo;
+
+		Points ();
 	}
-		
+	public static void Points (){
+		Scene activeScene = SceneManager.GetActiveScene ();
+		string myScene = activeScene.name;
+
+		if (myScene == "Level1" & score == 5) {
+			SceneManager.LoadScene ("Level2");
+
+		} else if (myScene == "Level1" & scoreTwo == 5) {
+			SceneManager.LoadScene ("Level2");
+
+		} else if (myScene == "Level2" & score == 15) {
+			SceneManager.LoadScene ("Level3");
+
+		} else if (myScene == "Level2" & scoreTwo == 15) {
+			SceneManager.LoadScene ("Level3");
+
+		} else if (myScene == "Level3" & score == 25) {
+
+		} else if (myScene == "Level3" & scoreTwo == 25) {
+
+		}
+	}
 }
