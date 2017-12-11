@@ -22,6 +22,17 @@ public class Ball : MonoBehaviour {
 		if (hassStarted) {
 			this.GetComponent<Rigidbody2D>().velocity += tweak;
 		}
+		if (collision.gameObject.name == "Colliders") {
+
+			Score.score++;
+			this.transform.position = new Vector3 (0.08f, 0.11f, -1f);
+
+		}else if(collision.gameObject.name == "Colliders2"){
+
+			Score.scoreTwo++;
+			this.transform.position = new Vector3 (0.08f, 0.11f, -1f);
+
+		}
 	}
 
 	// Use this for initialization
@@ -48,7 +59,6 @@ public class Ball : MonoBehaviour {
 
 				this.GetComponent<Rigidbody2D>().velocity = new Vector2 (2f, 10f);
 			}
-
 		}
 	}
 }
