@@ -40,9 +40,10 @@ public class Score : MonoBehaviour {
 			SceneManager.LoadScene ("Level3");
 
 		} else if (myScene == "Level3" & score == 25) {
+			SceneManager.LoadScene ("EndingScrene");
 
 		} else if (myScene == "Level3" & scoreTwo == 25) {
-
+			SceneManager.LoadScene ("EndingScrene");
 		}
 	}
 }
