@@ -25,11 +25,13 @@ public class Ball : MonoBehaviour {
 		if (collision.gameObject.name == "Colliders") {
 
 			Score.score++;
+			Won.score++;
 			this.transform.position = new Vector3 (0.08f, 0.11f, -1f);
 
 		}else if(collision.gameObject.name == "Colliders2"){
 
 			Score.scoreTwo++;
+			Won.scoreTwo++;
 			this.transform.position = new Vector3 (0.08f, 0.11f, -1f);
 
 		}

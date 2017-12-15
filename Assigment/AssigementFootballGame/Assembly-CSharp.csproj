@@ -52,6 +52,7 @@
      <Compile Include="Assets\Scripts\Score.cs" />
      <Compile Include="Assets\Scripts\Square2.cs" />
      <Compile Include="Assets\Scripts\Squares.cs" />
+     <Compile Include="Assets\Scripts\Won.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>D:/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
