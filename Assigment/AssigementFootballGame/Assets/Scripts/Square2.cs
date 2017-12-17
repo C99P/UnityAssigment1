@@ -4,12 +4,10 @@ using UnityEngine;
 
 public class Square2 : MonoBehaviour {
 
-	// Use this for initialization
 	void Start () {
 		
 	}
-	
-	// Update is called once per frame
+
 	void Update () {
 		float mousePosInBlocks = (Input.mousePosition.y / Screen.width * 10f) - 3.5f;
 

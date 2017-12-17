@@ -6,23 +6,21 @@ using UnityEngine.SceneManagement;
 
 public class Score : MonoBehaviour {
 
-	//public static Score instance;
 	public Text Scoree;
 
 	public static int score = 0;
 	public static int scoreTwo = 0;
 
-	// Use this for initialization
 	void Start () {
 
 	}
-	
-	// Update is called once per frame
+	//Setting the Score text
 	void Update () {
 		Scoree.text = score + "            " + scoreTwo;
 
 		Points ();
 	}
+	//Moving to another level at certin score
 	public static void Points (){
 		Scene activeScene = SceneManager.GetActiveScene ();
 		string myScene = activeScene.name;

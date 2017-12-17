@@ -6,13 +6,10 @@ public class Squares : MonoBehaviour {
 
 	private Rigidbody2D square;
 
-
-	// Use this for initialization
 	void Start () {
 		square = this.GetComponent<Rigidbody2D> ();
 	}
-	
-	// Update is called once per frame
+
 	void Update () {
 
 		if (Input.GetKey (KeyCode.W)) {

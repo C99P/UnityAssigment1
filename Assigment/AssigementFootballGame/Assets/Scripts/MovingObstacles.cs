@@ -15,9 +15,10 @@ public class MovingObstacles : MonoBehaviour {
 
 	void Update()
 	{
+		//Linearly interpolates between obs,obs2 and timeLenght
 		transform.position = Vector3.Lerp(obs, obs2,
 			Mathf.SmoothStep(0f,1f,
-				Mathf.PingPong(Time.time/timeLenght, 1f)
+				Mathf.PingPong(Time.time/timeLenght, 1f)//This will make the object move from 0 to the original lenght only
 			) );
 	}
 }
